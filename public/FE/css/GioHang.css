@@ -1,0 +1,140 @@
+.title {
+    text-align: center;
+    color: #000;
+    margin: 2rem 0;
+    letter-spacing: 5px;
+}
+table{
+    width: 100%;
+}
+table tr th{
+    padding: .5rem ;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+table tr td{
+    padding: .5rem;
+}
+table tr td img{
+    width: 4rem;
+    height: 4rem;
+}
+table tr td a{
+    margin-left: 3rem;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+table tr td input{
+    width: 5rem;
+    outline: none;
+    text-align: center;
+}
+.close-product{
+    text-align: center;
+}
+.close-product i{
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+.category{
+    text-align: right;
+    margin-top: 5rem;
+}
+.category .price p{
+    margin: 0;
+    text-transform: uppercase;
+}
+.category .price span{
+    color: #ff6000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+.category >span{
+    color: #999;
+    text-transform: uppercase;
+}
+.button button{
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.update{
+    background-color: #007bff;
+}
+.buy{
+    background-color: #28a745;
+}
+.buy_info{
+    display: none;
+}
+.buy_info label{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.buy_info label span{
+    color: red;
+}
+.buy_info input,.buy_info select{
+    width: 70%;
+    padding: .3rem .5rem;
+    margin-bottom: 1rem;
+    color: #999;
+    border: 1px solid #999;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .items, .list__item{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .items, .list__item{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container{
+        width: 100%;
+        /*padding-right: 15px;*/
+        /*padding-left: 15px;*/
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width: 100%;
+        /*padding-right: 15px;*/
+        /*padding-left: 15px;*/
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}

@@ -1,0 +1,75 @@
+section {
+    background-image: url('http://127.0.0.1:8000/uploads/bacground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3rem 5rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+}
+
+form h4 {
+    color: #555;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: .3rem;
+}
+
+button {
+    background-color: var(--mainColor);
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.signup {
+    font-size: .8rem;
+    margin: .5rem 0;
+    text-decoration: none;
+}
+
+.facebook {
+    width: 100%;
+    background-color: #3b5998;
+    text-align: center;
+    padding: .3rem;
+    color: #fff !important;
+    text-decoration: none !important;
+    margin-top: 1rem;
+}
+@media (min-width: 320px) {
+    .sign-in form{
+        /*width: 100%;*/
+    }
+}
+@media (max-width: 575.98px) {
+    .sign-in form {
+        width: 100%;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .sign-in form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sign-in form {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,41 @@
+h2 {
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0 1rem;
+    font-weight: bold;
+}
+
+.news {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.news__img {
+    width: 100%;
+}
+
+.news__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.news__info span {
+    display: block;
+    color: #999;
+}
+
+.news__info a {
+    color: var(--mainColor);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.news__info p {
+    font-family: tahoma;
+    color: #555;
+    font-size: .9rem;
+}

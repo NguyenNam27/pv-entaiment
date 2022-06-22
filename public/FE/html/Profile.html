@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/Profile.css">
+
+</head>
+
+<body>
+    <header class="">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="#">
+                    <img src="../image/logo.jpg" alt="">
+                </a>
+            </div>
+            <i class="fa-solid fa-bars icon-menu"></i>
+            <i class="fa-solid fa-xmark icon-close"></i>
+            <nav class="menu">
+                <ul class="d-flex">
+                    <li class="menu1">
+                        <a href="">Artist</a>
+                        <ul class="menu2">
+                            <li><a href="#">booking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">Fanboard</a></li>
+                    <li class="menu1">
+                        <a href="">gallery</a>
+                        <ul class="menu2">
+                            <li><a href="#">picture</a></li>
+                            <li><a href="#">video</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">shop</a></li>
+                </ul>
+            </nav>
+            <div class="login login1">
+                <ul class="d-flex ">
+                    <li><a href="javascript:void(0)">login</a></li>
+                    <li><a href="javascript:void(0)">sign up</a></li>
+                </ul>
+            </div>
+            <div class="login2 login">
+                <ul class="d-flex align-items-center">
+                    <li class="logout"><a href="javascript:void(0)">log out</a></li>
+                    <li><a href="Profile.html"><img src="../image/a1.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-menu">
+            <ul>
+                <li>
+                    <a href="">artist</a>
+                    <ul>
+                        <li><a href="">Booking</a></li>
+                    </ul>
+                </li>
+                <li><a href="">news</a></li>
+                <li><a href="">fanboard</a></li>
+                <li>
+                    <a href="">gallery</a>
+                    <ul>
+                        <li><a href="">Picture</a></li>
+                        <li><a href="">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="">shop</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">sign up</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="bg-main text-center">
+                                <div class="avt">
+                                    <img src="../image/2-150x150.jpg" alt="">
+                                </div>
+                                <h2>NCHIEU2909</h2>
+                                <p class="desc-avt"><i class="fa-solid fa-star-of-david"></i><span>Top fan | August 2017</span></p>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="bg-main text-center bottom">
+                                <p><i class="fa-solid fa-cart-shopping"></i> <span>CART ( 1)</span></p>
+                                <p>TOTAL: 870.000 Đ</p>
+                                <div class="cart_item d-flex align-items-center justify-content-between">
+                                    <p>PREMIUM DIGITAL PACKAGE</p>
+                                    <p>870.000 Đ</p>
+                                    <p>x 1</p>
+                                </div>
+                                <div class="cart_item d-flex align-items-center justify-content-between">
+                                    <p>PREMIUM DIGITAL PACKAGE</p>
+                                    <p>870.000 Đ</p>
+                                    <p>x 1</p>
+                                </div>
+                                <a href="GioHang.html">checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 bg-main profile">
+                    <h2>PERSONAL PROFILE</h2>
+                    <span>Sign in by Facebook account</span>
+                    <form action="">
+                        <label for="">FULL NAME *</label>
+                        <input type="text" name="" id="">
+                        <label for="">PHONE NUMBER *</label>
+                        <input type="text" name="" id="">
+                        <label for="">EMAIL *</label>
+                        <input type="text" name="" id="">
+                        <label for="">GENDER *</label>
+                        <div class="radio-check d-flex justify-content-start align-items-center">
+                            <input type="radio" name="radio"> <label for=""> MALE</label>
+                            <input type="radio" name="radio"> <label for=""> FEMALE</label>
+                        </div>
+                        <label for="">DATE OF BIRTH *</label>
+                        <div class="date">
+                            <input type="number" name="" id="" min="1" max="31">
+                            <span>/</span>
+                            <input type="number" name="" id="" min="1" max="12">
+                            <span>/</span>
+                            <input type="number" name="" id="" min="1900" max="2022">
+                        </div>
+                    </form>
+                    <div class="save d-flex align-items-center">
+                        <button>save change</button>
+                        <p>cancel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center info">
+                    <p>CÔNG TY TNHH M-TP ENTERTAINMENT</p>
+                    <span>Tầng trệt, Tòa nhà ROSANA, Số 60 Nguyễn Đình Chiểu, Phường Đa Kao, Quận 1, Thành phố Hồ Chí
+                        Minh, Việt Nam. GPKD Số 0314101016 Do Sở kế hoạch và đầu tư cấp ngày 08/11/2016</span>
+                </div>
+                <div class="col-md-4">
+                    <div class="item d-flex justify-content-between align-items-center">
+                        <input type="text" placeholder="email address">
+                        <button>sign up</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info__img">
+                        <a href="Trangchu.html">
+                            <img src="../image/logo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('.icon-menu').click(function () {
+            $('.mb-menu').show();
+            $('.icon-close').show();
+            $(this).hide();
+        });
+        $('.icon-close').click(function () {
+            $('.mb-menu').hide();
+            $('.icon-menu').show();
+            $(this).hide();
+        });
+
+        $('.logout').click(function () {
+            $('.login1').show();
+            $('.login2').hide();
+        });
+    })
+</script>
+
+</html>

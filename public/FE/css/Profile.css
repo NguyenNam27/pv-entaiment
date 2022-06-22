@@ -1,0 +1,126 @@
+.bg-main{
+    background-color: #f1f1f1;
+    padding: 2rem;
+}
+.avt{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.avt img{
+    width: 100%;
+}
+h2{
+    margin: 0 0 1.5rem 0;
+}
+.desc-avt{
+    color: var(--mainColor);
+    margin: 0;
+}
+.bottom p{
+    font-size: 1.3rem;
+}
+.bottom a{
+    border-radius: 2rem;
+    background-color: var(--mainColor);
+    color: #f1f1f1;
+    padding: .3rem 0;
+    width: 7rem;
+    display: block;
+    margin:1rem auto;
+}
+.profile{
+    padding: 2rem;
+}
+.profile h2{
+}
+.profile span{
+    color: #999;
+    margin: 1rem 0;
+}
+.profile form>label{
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.profile form>input
+{
+    width: 100%;
+    border-radius: 1rem;
+    border: none;   
+    outline: none;
+    padding: .2rem 1rem; 
+    margin-bottom: 1rem;
+}
+.radio-check{
+    margin-bottom: 1rem;
+}
+.radio-check input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+.radio-check label{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+.date input{
+    border-radius: 1rem;
+    border: none;   
+    outline: none;
+    padding: .2rem 1rem; 
+    margin-bottom: 1rem;
+    width: 7rem;
+}
+.date span{
+    margin: 0 1rem;
+}
+.save button{
+    background-color: var(--mainColor);
+    border-radius: 2rem;
+    padding: .2rem 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+.save p{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #999;
+    border-bottom: 1px solid #999;
+}
+
+@media (max-width: 575.98px) {
+    .profile{
+        margin: 1rem 15px;
+    }
+    .date input{
+        width: 4.5rem;
+    }
+    .date span{
+        margin: 0 .5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .profile{
+        margin: 0 15px;
+    }
+    .date span{
+        margin: 0 .5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .profile{
+        margin: 1rem 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

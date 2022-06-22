@@ -1,0 +1,26 @@
+.title {
+    text-align: center;
+    color: #000;
+    margin: 2rem 0;
+    letter-spacing: 5px;
+}
+input{
+    padding: .2rem 1rem;
+    width: 25rem;
+    margin: 0 auto 2rem;
+}
+textarea{
+    width: 25rem;
+    margin: 0 auto 2rem;
+    padding: .2rem 1rem;
+
+}
+.button{
+    width: 10rem;
+    margin: auto;
+}
+button{
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+}

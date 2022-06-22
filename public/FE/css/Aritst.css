@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.artist-main{
+    font-family: 'Roboto', sans-serif;
+    margin: 3rem 0;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-size: 2.5rem;
+}
+.artist {
+    list-style: none;
+    padding: 0;
+}
+.artist li{
+    color: var(--mainColor);
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.info_left p{
+    color: var(--mainColor);
+    margin-bottom: 0.5rem;
+}
+.info_right p{
+    margin-bottom: 0.5rem;
+
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    margin: 3rem 0 1rem;
+}
+.right_img{
+    width: 100%;
+
+}
+.right_img img{
+    width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .artist li{
+        font-style: 1rem;
+    }
+    .info_left p,.info_right p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {
+
+}
