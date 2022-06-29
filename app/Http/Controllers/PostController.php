@@ -85,7 +85,6 @@ class PostController extends Controller
         $post = new Post();
         $post ->title = $title;
         $post->slug =$slug;
-//            $post->subcategories_id = $subcategories_id;
         $post->key_word = $key_word;
         $post->short_description = $short_description;
         $post->content =$content;

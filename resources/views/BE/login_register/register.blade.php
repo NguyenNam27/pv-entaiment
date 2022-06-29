@@ -86,7 +86,7 @@
                     <div class="form-group">
                         <label for="exampleInputPassword1">Hình ảnh</label>
                         <input type="file" name="image" >
-                    @if($errors->has('image'))
+                        @if($errors->has('image'))
                             <label class="Text-red" style="font-size:15px;font-weight:600;margin-top:5px;color:red" >
                                 <i class="fa fa-info"></i>{{$errors->first('image')}}
                             </label>

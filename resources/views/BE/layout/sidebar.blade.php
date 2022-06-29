@@ -54,6 +54,11 @@
                   <i class="fa fa-user"></i> <span >BOOKING</span>
               </a>
           </li>
+          <li class="active">
+              <a href="{{route('admin.photo.index')}}">
+                  <i class="fa fa-user"></i> <span >QUẢN LÝ GALLERY</span>
+              </a>
+          </li>
 
 
       </ul>

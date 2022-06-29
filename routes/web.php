@@ -42,6 +42,9 @@ Route::group(['prefix'=>'admin','as'=>'admin.','middleware'=>'check'], function(
     Route::resource('/setting','SettingController');
     Route::resource('/video','VideoController');
     Route::resource('/booking','ContactController');
+    Route::resource('/photo','GalleryController');
+
+
 
 });
 

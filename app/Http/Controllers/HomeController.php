@@ -32,11 +32,11 @@ class HomeController extends Controller
             ->get();
         $video = Video::where('is_active','1')
             ->orderBy('id','desc')
-            ->limit(2)
+            ->limit(5)
             ->get();
         $post =Post::where('is_active','1')
             ->orderBy('id','desc')
-            ->limit(3)
+            ->limit(5)
             ->get();
         return view('FE.layout.trangchu',[
             'banner'=>$banner,

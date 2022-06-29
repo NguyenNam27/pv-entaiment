@@ -11,6 +11,8 @@ use App\Post;
 use App\Setting;
 use App\Video;
 use App\Contact;
+use App\Photo;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -164,7 +166,10 @@ class FrontEndController extends Controller
 
 
     public function picture(){
-        return view('FE.layout.picture');
+        $picture = Photo::all();
+        return view('FE.layout.picture',[
+            'picture'=>$picture
+        ]);
     }
     public function video(){
         return view('FE.layout.video');
