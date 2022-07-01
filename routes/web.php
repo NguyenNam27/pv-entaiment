@@ -71,7 +71,6 @@ Route::get('cart','CartController@giohang_index')->name('cart.index');
 Route::get('add-to-cart/{id}','CartController@AddToCart')->name('add_cart');
 Route::patch('update-cart','CartController@UpdateCart')->name('update_cart');
 Route::delete('remove-cart','CartController@RemoveCart')->name('remove-cart');
-//Route::get('district/','LocationController@loadDistrict')->name('location.district');
 
 //ajax location
 Route::post('district/','LocationController@loadDistrict')->name('location.district');

@@ -152,7 +152,7 @@
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js_cart'); ?>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script type="text/javascript">
 
@@ -273,7 +273,6 @@
                     districtid: $(this).val(),
                     _token: $('meta[name="csrf-token"]').attr('content')
                 }
-                // console.log(data);
                 $.ajax({
                     type:'POST',
                     url:'ward',

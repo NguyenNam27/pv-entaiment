@@ -113,10 +113,8 @@ class VideoController extends Controller
     public function update(Request $request, $id)
     {
         $request-> validate([
-//            'title'=>'required|max:255|unique:videos',
 
         ],[
-//            'title.required'=>'Bạn cần nhập tên video',
 
         ]);
 

@@ -13,14 +13,15 @@ class LocationController extends Controller
 {
     public function loadDistrict(Request $request)
     {
-        $province = Province::find((int)$request->provinceid);
+        $province = Province::find($request->provinceid);
+        dd($province);
         $district = District::from("districts")->where("provinceid", $province->provinceid)->get();
         return response()->json($district);
     }
 
     public function loadWard(Request $request)
     {
-        $locationDistrict = District::find((int)$request->districtid);
+        $locationDistrict = District::find($request->districtid);
         $ward = Ward::from('wards')->where('districtid',$locationDistrict->districtid)->get();
         return response()->json($ward);
     }
