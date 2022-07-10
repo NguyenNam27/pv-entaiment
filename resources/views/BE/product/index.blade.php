@@ -48,7 +48,11 @@
                                     <tr class="item-{{$pro->id}}">
                                         <td>{{$key+1}}</td>
                                         <td>{{$pro->name}}</td>
-                                        <td><img src="{{asset($pro->image)}}" width="70" height="100%"></td>
+                                        <td>
+                                            <img src="{{asset($pro->image)}}" width="70" height="100%">
+                                            <input type="file" id="image" name="image">
+                                            <p class="help-block">Chọn thêm hình cho sản phẩm.</p>
+                                        </td>
                                         <td>{{@$pro->subcategory->name}}</td>
                                         <th>{{number_format($pro->price)}}</th>
                                         <th>{{strip_tags($pro->short_description)}}</th>

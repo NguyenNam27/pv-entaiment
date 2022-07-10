@@ -90,12 +90,11 @@
                 <div class="content">
                     <div class="list__item">
                         <div class="wpb_wrapper">
-                            <div >
-                                <span >
-                                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVinhOfficialFanpage&tabs=timeline&width=320&height=320&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-                                           width="320" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                                           allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                                </span>
+                            <div style="text-align: center" >
+{{--                                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVinhOfficialFanpage&tabs=timeline&width=320&height=320&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"--}}
+{{--                                           width="320" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0"--}}
+{{--                                           allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>--}}
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVinhOfficialFanpage%2F&tabs=timeline&width=320&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                             </div>
                             <div class="socical-widget">
                                 <h5>Follow us on</h5>

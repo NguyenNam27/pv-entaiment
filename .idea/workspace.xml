@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0243b60c-9409-4a0c-85bb-1de3bff56cb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/FE/css/lightgallery.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/FE/css/lightslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/FE/css/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lightgallery-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lightslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/prettify.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LocationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VideoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VideoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/location/district.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/location/ward.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FE/css/ChiTietSanPham.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/FE/css/ChiTietSanPham.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FE/css/TrangChu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/FE/css/TrangChu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FE/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/FE/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/BE/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BE/product/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/BE/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BE/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_chititetsanpham.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_chititetsanpham.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/3bxO2oKmS8uOccXK5BxCCtttCd7rIZpxuO6iZmbD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/SqATTMJheaeOnGpGSjj1QEdspUKzoAk541dYhOrI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/UyFBZ3EfXJTIbkbjGyaXT9wsNanAYy4ofp8VlE55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/bpVJLEWMZYTfjNT4QFLrV4h0YpzKmlR6xNRRR4mC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5021ba3ecbaa8bde25adb1583fee993e56dd5dce.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5021ba3ecbaa8bde25adb1583fee993e56dd5dce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/990759fc06ec4bb2f102fb0d585c93a5d66aad41.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/990759fc06ec4bb2f102fb0d585c93a5d66aad41.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a6ef2e0cd69c2de75f901d984e117c7251cea624.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a6ef2e0cd69c2de75f901d984e117c7251cea624.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +149,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shopbanhanglaravel" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -168,7 +186,10 @@
       <workItem from="1656350244205" duration="632000" />
       <workItem from="1656397608085" duration="14540000" />
       <workItem from="1656557571444" duration="1358000" />
-      <workItem from="1656566923461" duration="5439000" />
+      <workItem from="1656566923461" duration="6106000" />
+      <workItem from="1656938624479" duration="10142000" />
+      <workItem from="1657108855716" duration="27150000" />
+      <workItem from="1657377122026" duration="633000" />
     </task>
     <servers />
   </component>

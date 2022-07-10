@@ -18,6 +18,11 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="FE/css/base.css">
     <link rel="stylesheet" href="FE/css/ChiTietSanPham.css">
+    <link rel="stylesheet" href="FE/css/lightslider.css">
+    <link rel="stylesheet" href="FE/css/prettify.css">
+    <link rel="stylesheet" href="FE/css/lightgallery.min.css">
+
+
 
 </head>
 
@@ -54,5 +59,10 @@
 
     })
 </script>
+
+<script src="js/lightgallery-all.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/prettify.js"></script>
+
 <?php echo $__env->yieldContent('myjs'); ?>
 </html>

@@ -47,7 +47,11 @@
                                     <tr class="item-<?php echo e($pro->id); ?>">
                                         <td><?php echo e($key+1); ?></td>
                                         <td><?php echo e($pro->name); ?></td>
-                                        <td><img src="<?php echo e(asset($pro->image)); ?>" width="70" height="100%"></td>
+                                        <td>
+                                            <img src="<?php echo e(asset($pro->image)); ?>" width="70" height="100%">
+                                            <input type="file" id="image" name="image">
+                                            <p class="help-block">Chọn thêm hình cho sản phẩm.</p>
+                                        </td>
                                         <td><?php echo e(@$pro->subcategory->name); ?></td>
                                         <th><?php echo e(number_format($pro->price)); ?></th>
                                         <th><?php echo e(strip_tags($pro->short_description)); ?></th>

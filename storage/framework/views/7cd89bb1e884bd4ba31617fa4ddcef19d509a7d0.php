@@ -16,9 +16,8 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo e(route('tintuc')); ?>">news</a></li>
-
                 <li class="menu1">
-                    <a href="">gallery</a>
+                    <a href="<?php echo e(route('picture')); ?>">gallery</a>
                     <ul class="menu2">
                         <li><a href="<?php echo e(route('picture')); ?>">picture</a></li>
                         <li><a href="<?php echo e(route('video')); ?>">video</a></li>
@@ -72,7 +71,7 @@
             </li>
             <li ><a href="<?php echo e(route('tintuc')); ?>">NEWS</a></li>
             <li >
-                <a href="">GALLERY</a>
+                <a href="<?php echo e(route('picture')); ?>">GALLERY</a>
                 <ul>
                     <li><a href="<?php echo e(route('picture')); ?>">PICTURE</a></li>
                     <li><a href="<?php echo e(route('video')); ?>">VIDEO</a></li>

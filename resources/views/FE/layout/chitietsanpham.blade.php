@@ -4,10 +4,24 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-12 col-lg-5">
-{{--                    {{dd($detail_product)}}--}}
-                    <div class="item_img">
-                        <img src="{{asset($detail_product->image)}}" alt="hinh anh san pham">
-                    </div>
+{{--                    <div class="item_img">--}}
+{{--                        <img src="{{asset($detail_product->image)}}" alt="hinh anh san pham">--}}
+{{--                    </div>--}}
+                    <ul id="imageGallery" style="list-style: none">
+                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
+                            <img width="100%" src="{{asset($detail_product->image)}}" />
+                        </li>
+                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
+                            <img width="10%" src="{{asset($detail_product->image)}}" />
+                        </li>
+                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
+                            <img width="10%" src="{{asset($detail_product->image)}}" />
+                        </li>
+                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
+                            <img width="10%" src="{{asset($detail_product->image)}}" />
+                        </li>
+
+                    </ul>
                 </div>
                 <div class="col-md-12 col-lg-7">
                     <div class="item_info">
@@ -112,5 +126,23 @@
             });
         });
 
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#imageGallery').lightSlider({
+                gallery:true,
+                item:1,
+                loop:true,
+                thumbItem:3,
+                slideMargin:0,
+                enableDrag: false,
+                currentPagerPosition:'left',
+                onSliderLoad: function(el) {
+                    el.lightGallery({
+                        selector: '#imageGallery .lslide'
+                    });
+                }
+            });
+        });
     </script>
 @endsection

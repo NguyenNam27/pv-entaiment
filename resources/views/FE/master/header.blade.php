@@ -16,9 +16,8 @@
                     </ul>
                 </li>
                 <li><a href="{{route('tintuc')}}">news</a></li>
-{{--                <li><a href="{{route('lienhe')}}">booking</a></li>--}}
                 <li class="menu1">
-                    <a href="">gallery</a>
+                    <a href="{{route('picture')}}">gallery</a>
                     <ul class="menu2">
                         <li><a href="{{route('picture')}}">picture</a></li>
                         <li><a href="{{route('video')}}">video</a></li>
@@ -70,7 +69,7 @@
             </li>
             <li ><a href="{{route('tintuc')}}">NEWS</a></li>
             <li >
-                <a href="">GALLERY</a>
+                <a href="{{route('picture')}}">GALLERY</a>
                 <ul>
                     <li><a href="{{route('picture')}}">PICTURE</a></li>
                     <li><a href="{{route('video')}}">VIDEO</a></li>

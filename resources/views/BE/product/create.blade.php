@@ -124,17 +124,6 @@
                                         @endif
                                     </div>
 
-{{--                                    <div class="form-group">--}}
-{{--                                        <label for="exampleInputEmail1"> Từ khoá tìm kiếm </label>--}}
-{{--                                        <input type="text" class="form-control" name="key_word" id="key_word">--}}
-{{--                                        @if($errors->has('key_word'))--}}
-{{--                                            <label class="Text-red"--}}
-{{--                                                   style=" font-size:15px;font-weight:600;margin-top:5px;color:red">--}}
-{{--                                                <i class="fa fa-info"></i>{{$errors->first('key_word')}}--}}
-{{--                                            </label>--}}
-{{--                                        @endif--}}
-{{--                                    </div>--}}
-
                                     <div class="form-group">
                                         <label for="exampleInputEmail1"> Hoạt động </label>
                                         <select class="form-control" name="is_active">
