@@ -97,9 +97,6 @@
                     $('.btn-delete').on('click', function () {
 
                         let id = $(this).data('id');
-
-                        // let result = confirm("Bạn có chắc chắn muốn xóa ?");
-
                         Swal.fire({
                             title: 'Bạn có chắc không?',
                             text: "Bạn có chắc chắn muốn xóa ?",

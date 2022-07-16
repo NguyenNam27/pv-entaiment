@@ -25,6 +25,7 @@
                 ?>
                 <?php if(session('cart')): ?>
                     <?php $__currentLoopData = session('cart'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $id=>$details): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+
                         <?php  $total += $details['price'] * $details['quantity'] ?>
                         <tr data-id=<?php echo e($id); ?>>
                             <td>
@@ -51,7 +52,7 @@
             </table>
             <div class="category ">
                 <div class="price">
-                    <p>Tổng tiền: <span id="tong-tien">  <?php echo e(number_format($total)); ?> đ</span></p>
+                    <p>Tổng tiền: <span id="tong-tien">  <?php echo e(number_format($total)); ?> Đ</span></p>
                 </div>
                 <span>Giá chưa bao gồm phí Ship</span>
                 <div class="button">
@@ -152,8 +153,7 @@
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js_cart'); ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -162,7 +162,6 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             })
-
             $('.update-cart').on('click', function (e) {
                 e.preventDefault();
                 var element = $(this);
@@ -273,6 +272,7 @@
                     districtid: $(this).val(),
                     _token: $('meta[name="csrf-token"]').attr('content')
                 }
+                // console.log(data);
                 $.ajax({
                     type:'POST',
                     url:'ward',

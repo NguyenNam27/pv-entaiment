@@ -131,7 +131,7 @@ class FrontEndController extends Controller
                 'name' => 'required|unique:users',
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|min:6|max:20',
-                'image' => 'mimes:jpg,bmp,png,.jpg'
+//                'image' => 'mimes:jpg,bmp,png'
             ],
             [
                 'name.required' => 'vui lòng nhập tên',
@@ -141,7 +141,7 @@ class FrontEndController extends Controller
                 'email.unique' => 'emai đã có người dùng',
                 'password.required' => 'password chưa nhập',
                 'image.required' => 'Vui lòng nhập ảnh của bạn',
-                'image.mimes' => 'Ảnh chưa đúng định dạng'
+//                'image.mimes' => 'Ảnh chưa đúng định dạng'
             ]);
 
         $path_avatar = '';
@@ -174,6 +174,6 @@ class FrontEndController extends Controller
     public function video(){
         return view('FE.layout.video');
     }
-
+    
 
 }

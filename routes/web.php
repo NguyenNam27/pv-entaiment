@@ -77,8 +77,9 @@ Route::post('district/','LocationController@loadDistrict')->name('location.distr
 Route::post('ward/','LocationController@loadWard')->name('location.ward');
 
 //đặt hàng
-Route::get('order','CartController@Order')->name('order');
-
+//Route::get('order','CartController@Order')->name('order');
+Route::get('/checkout', 'CartController@getCheckOut');
+Route::post('/checkout', 'CartController@postCheckOut');
 
 
 

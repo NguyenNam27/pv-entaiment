@@ -25,6 +25,7 @@
                 @endphp
                 @if(session('cart'))
                     @foreach(session('cart') as $id=>$details)
+{{--                        {{dd($details)}}--}}
                         @php  $total += $details['price'] * $details['quantity'] @endphp
                         <tr data-id={{$id}}>
                             <td>
@@ -50,7 +51,7 @@
             </table>
             <div class="category ">
                 <div class="price">
-                    <p>Tổng tiền: <span id="tong-tien">  {{number_format($total)}} đ</span></p>
+                    <p>Tổng tiền: <span id="tong-tien">  {{number_format($total)}} Đ</span></p>
                 </div>
                 <span>Giá chưa bao gồm phí Ship</span>
                 <div class="button">
@@ -150,8 +151,7 @@
 
 @endsection
 @section('js_cart')
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -160,7 +160,6 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             })
-
             $('.update-cart').on('click', function (e) {
                 e.preventDefault();
                 var element = $(this);
@@ -271,6 +270,7 @@
                     districtid: $(this).val(),
                     _token: $('meta[name="csrf-token"]').attr('content')
                 }
+                // console.log(data);
                 $.ajax({
                     type:'POST',
                     url:'ward',

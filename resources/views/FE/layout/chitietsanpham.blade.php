@@ -7,6 +7,7 @@
 {{--                    <div class="item_img">--}}
 {{--                        <img src="{{asset($detail_product->image)}}" alt="hinh anh san pham">--}}
 {{--                    </div>--}}
+
                     <ul id="imageGallery" style="list-style: none">
                         <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
                             <img width="100%" src="{{asset($detail_product->image)}}" />
@@ -36,8 +37,8 @@
                             <button class = "input-group-text decrement-btn">-</button>
                             <input type="text" class="qty-input" value="1" disabled>
                             <button class = "input-group-text increment-btn">+</button>
-
                         </div>
+
 {{--                        <p class="btn-holder"><a href="" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>--}}
 
                         <button  class="add-to-cart-btn"><a href="{{route('add_cart',['id'=>$detail_product->id])}}" style="color: white"> Add to cart</a> </button>
@@ -97,12 +98,10 @@
                     value++;
                     $('.qty-input').val(value);
                 }
-
             });
 
             $('.add-to-cart-btn').click(function (e) {
                 e.preventDefault();
-
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

@@ -6,6 +6,7 @@
 
 
 
+
                     <ul id="imageGallery" style="list-style: none">
                         <li data-thumb="<?php echo e(asset($detail_product->image)); ?>" data-src="<?php echo e(asset($detail_product->image)); ?>">
                             <img width="100%" src="<?php echo e(asset($detail_product->image)); ?>" />
@@ -35,8 +36,8 @@
                             <button class = "input-group-text decrement-btn">-</button>
                             <input type="text" class="qty-input" value="1" disabled>
                             <button class = "input-group-text increment-btn">+</button>
-
                         </div>
+
 
 
                         <button  class="add-to-cart-btn"><a href="<?php echo e(route('add_cart',['id'=>$detail_product->id])); ?>" style="color: white"> Add to cart</a> </button>
@@ -96,12 +97,10 @@
                     value++;
                     $('.qty-input').val(value);
                 }
-
             });
 
             $('.add-to-cart-btn').click(function (e) {
                 e.preventDefault();
-
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

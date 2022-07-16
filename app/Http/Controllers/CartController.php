@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Province;
 use App\Ward;
+use Cart;
+use Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class CartController extends Controller
@@ -55,8 +57,10 @@ class CartController extends Controller
         }
 
     }
-    public function Order(){
-
+    public function getCheckOut(){
+        $cart = Session::get('cart');
+        
+        dd( $cart->price);
     }
 
 }
