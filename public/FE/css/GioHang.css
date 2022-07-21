@@ -47,7 +47,7 @@ table tr td input{
 }
 .category .price p{
     margin: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .category .price span{
     color: #ff6000;

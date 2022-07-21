@@ -39,10 +39,7 @@
 
                             </td>
                             <td id="total-<?php echo e($id); ?>"
-                                class="total_price"
-                                total_price="<?php echo e($details['price'] * $details['quantity']); ?>"><?php echo e(number_format($details['price'] * $details['quantity'])); ?>
-
-                                đ
+                                class="total_price" total_price="<?php echo e($details['price'] * $details['quantity']); ?>"><?php echo e(number_format($details['price'] * $details['quantity'])); ?>đ
                             </td>
                             <td class="close-product"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
@@ -52,7 +49,7 @@
             </table>
             <div class="category ">
                 <div class="price">
-                    <p>Tổng tiền: <span id="tong-tien">  <?php echo e(number_format($total)); ?> Đ</span></p>
+                    <p>Tổng tiền: <span id="tong-tien">  <?php echo e(number_format($total)); ?>đ</span></p>
                 </div>
                 <span>Giá chưa bao gồm phí Ship</span>
                 <div class="button">
@@ -153,7 +150,8 @@
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js_cart'); ?>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -162,6 +160,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             })
+
             $('.update-cart').on('click', function (e) {
                 e.preventDefault();
                 var element = $(this);

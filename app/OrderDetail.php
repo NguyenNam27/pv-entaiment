@@ -10,4 +10,7 @@ class OrderDetail extends Model
     protected $table="order_details";
 
     protected $fillable = ['name','image','sku','order_id','product_id','price','qty','created_at','updated_at'];
+    public function product(){
+        return $this->belongsTo('App\Product','product_id');
+    }
 }
