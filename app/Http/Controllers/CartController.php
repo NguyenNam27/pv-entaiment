@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Province;
 use App\Ward;
+use App\Customer;
+use App\Order;
 use Cart;
 use Session;
 
@@ -62,11 +64,11 @@ class CartController extends Controller
     }
     public function getCheckOut(){
         $this->data['cart'] = Session::get('cart');
-
-//        dd( $this->data['cart'] = Session::get('cart'));
-
+        dd($this->data['cart'] = Session::get('cart'));
+        return view('FE.layout.giohang');
     }
     public function postCheckOut(Request $request){
+        dd($request->all());
         $request-> validate([
             'name'=>'required|max:255',
             'email'=>'required|email|unique:customers',
@@ -93,11 +95,10 @@ class CartController extends Controller
         $order->customer_id=$customer->id;
         $order->date_order = date('Y-m-d H:i:s');
         $order->totals = str_replace(',', '', Cart::total());
-
-
+        $order->save();
 
         session()->flash('success','Cảm ơn bạn đã gửi thông ton cho chúng tôi.');
-        return redirect()->route('cart.index');
+        return redirect()->route('order');
 
 
 

@@ -59,7 +59,8 @@
             </div>
             <div class="buy_info">
                 <h3 class="title"><i class="fa-solid fa-pen-to-square"></i> THÔNG TIN ĐẶT HÀNG</h3>
-                <form action="">
+                <form action="{{route('post_checkout')}}" method="post" enctype="multipart/form-data">
+                    @csrf
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Họ tên <span>*</span></label>
@@ -137,12 +138,13 @@
                             <input type="text" name="note" id="" placeholder="Nội dung lời nhắn">
                         </div>
                     </div>
-                </form>
+
                 <div class="desc d-dfex">
                     <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
                     <a href="#">Chính sách & Quy định của chúng tôi.</a>
                 </div>
-                <button>Đặt hàng</button>
+                <button type="submit">Đặt hàng</button>
+                </form>
             </div>
         </div>
     </section>
