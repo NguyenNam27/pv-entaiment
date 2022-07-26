@@ -1,12 +1,11 @@
 @extends('FE.master.layout_giohang')
 @section('content')
+    @if(count(session('cart'))>0)
     <section>
         <div class="container">
             <h3 class="title">ORDER FORM</h3>
-            @if(session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
+            @if(session()->has('success'))
+                <div class="alert alert-success">{{session()->get('success')}}</div>
             @endif
             <table class="table-bordered">
                 <thead>
@@ -21,11 +20,9 @@
                 <tbody>
                 @php
                     $total = 0;
-
                 @endphp
                 @if(session('cart'))
                     @foreach(session('cart') as $id=>$details)
-{{--                        {{dd($details)}}--}}
                         @php  $total += $details['price'] * $details['quantity'] @endphp
                         <tr data-id={{$id}}>
                             <td>
@@ -59,7 +56,8 @@
             </div>
             <div class="buy_info">
                 <h3 class="title"><i class="fa-solid fa-pen-to-square"></i> THÔNG TIN ĐẶT HÀNG</h3>
-                <form action="">
+                <form action="{{route('post_checkout')}}" method="post" enctype="multipart/form-data">
+                    @csrf
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Họ tên <span>*</span></label>
@@ -137,16 +135,36 @@
                             <input type="text" name="note" id="" placeholder="Nội dung lời nhắn">
                         </div>
                     </div>
+                    <div class="desc d-dfex">
+                        <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
+                        <a href="#">Chính sách & Quy định của chúng tôi.</a>
+                    </div>
+                    <button>Đặt hàng</button>
                 </form>
-                <div class="desc d-dfex">
-                    <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
-                    <a href="#">Chính sách & Quy định của chúng tôi.</a>
-                </div>
-                <button>Đặt hàng</button>
+
             </div>
         </div>
     </section>
+    @else
+    <section>
 
+        <table class="table-bordered">
+{{--            <thead>--}}
+{{--            <tr>--}}
+{{--                <th>Sản phẩm</th>--}}
+{{--                <th>Giá</th>--}}
+{{--                <th>Số lượng</th>--}}
+{{--                <th>Thành tiền</th>--}}
+{{--                <th></th>--}}
+{{--            </tr>--}}
+{{--            </thead>--}}
+            <tbody>
+                    <h3 style="text-align: center">Không có sản phẩm trong giỏ</h3>
+            </tbody>
+        </table>
+
+    </section>
+@endif
 @endsection
 @section('js_cart')
     {{--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>--}}

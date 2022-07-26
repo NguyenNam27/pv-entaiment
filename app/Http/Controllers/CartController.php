@@ -7,6 +7,7 @@ use App\Province;
 use App\Ward;
 use Cart;
 use Session;
+use App\Customer;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -87,16 +88,15 @@ class CartController extends Controller
         $customer->email = $request->input('email');
         $customer->phone = $request->input('phone');
         $customer->address = $request->input('address');
+        $customer->note = $request->input('note');
         $customer->save();
+//        dd($customer);
+//        $order = new Order();
+//        $order->customer_id=$customer->id;
+//        $order->date_order = date('Y-m-d H:i:s');
+//        $order->totals = str_replace(',', '', Cart::total());
 
-        $order = new Order();
-        $order->customer_id=$customer->id;
-        $order->date_order = date('Y-m-d H:i:s');
-        $order->totals = str_replace(',', '', Cart::total());
-
-
-
-        session()->flash('success','Cảm ơn bạn đã gửi thông ton cho chúng tôi.');
+        session()->flash('success','Cảm ơn bạn đã gửi thông tin cho chúng tôi.');
         return redirect()->route('cart.index');
 
 

@@ -1,12 +1,10 @@
 <?php $__env->startSection('content'); ?>
+    <?php if(count(session('cart'))>0): ?>
     <section>
         <div class="container">
             <h3 class="title">ORDER FORM</h3>
-            <?php if(session('success')): ?>
-                <div class="alert alert-success">
-                    <?php echo e(session('success')); ?>
-
-                </div>
+            <?php if(session()->has('success')): ?>
+                <div class="alert alert-success"><?php echo e(session()->get('success')); ?></div>
             <?php endif; ?>
             <table class="table-bordered">
                 <thead>
@@ -21,11 +19,9 @@
                 <tbody>
                 <?php
                     $total = 0;
-
                 ?>
                 <?php if(session('cart')): ?>
                     <?php $__currentLoopData = session('cart'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $id=>$details): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
                         <?php  $total += $details['price'] * $details['quantity'] ?>
                         <tr data-id=<?php echo e($id); ?>>
                             <td>
@@ -59,7 +55,8 @@
             </div>
             <div class="buy_info">
                 <h3 class="title"><i class="fa-solid fa-pen-to-square"></i> THÔNG TIN ĐẶT HÀNG</h3>
-                <form action="">
+                <form action="<?php echo e(route('post_checkout')); ?>" method="post" enctype="multipart/form-data">
+                    <?php echo csrf_field(); ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Họ tên <span>*</span></label>
@@ -138,16 +135,36 @@
                             <input type="text" name="note" id="" placeholder="Nội dung lời nhắn">
                         </div>
                     </div>
+                    <div class="desc d-dfex">
+                        <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
+                        <a href="#">Chính sách & Quy định của chúng tôi.</a>
+                    </div>
+                    <button>Đặt hàng</button>
                 </form>
-                <div class="desc d-dfex">
-                    <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
-                    <a href="#">Chính sách & Quy định của chúng tôi.</a>
-                </div>
-                <button>Đặt hàng</button>
+
             </div>
         </div>
     </section>
+    <?php else: ?>
+    <section>
 
+        <table class="table-bordered">
+
+
+
+
+
+
+
+
+
+            <tbody>
+                    <h3 style="text-align: center">Không có sản phẩm trong giỏ</h3>
+            </tbody>
+        </table>
+
+    </section>
+<?php endif; ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js_cart'); ?>
     

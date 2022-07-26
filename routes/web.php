@@ -78,8 +78,8 @@ Route::post('ward/','LocationController@loadWard')->name('location.ward');
 
 //đặt hàng
 //Route::get('order','CartController@Order')->name('order');
-Route::get('/checkout', 'CartController@getCheckOut');
-Route::post('/checkout', 'CartController@postCheckOut');
+Route::get('/checkout', 'CartController@getCheckOut')->name('order');
+Route::post('/checkout', 'CartController@postCheckOut')->name('post_checkout');
 
 
 
