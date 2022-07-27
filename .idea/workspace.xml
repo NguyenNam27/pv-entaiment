@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0243b60c-9409-4a0c-85bb-1de3bff56cb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/40e59945b1a3963971355fafdae2249b80e67799.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5171c047349367ef237cef8229dd532334c91d57.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/524fe8f946af4373c6a3611b36a4af595614beb9.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5670c5e2fa235ffcb234fb85199bceed0eb34938.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5d6d8c25c90c876b9af7f82eeb56cba748784346.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5e57a415589979e10337f14a396182a85d71401c.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/8cc9d16d835c63f658514313a51bddbb2821c6d8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/92257a5a4f284959120e6f7f7771317b8d41100e.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/b208c353f12e863f7eec1e6a28587fc658dc8b24.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c85e18d59185fdfd15aee5632940851e589bf91f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/fe113bf3c94f72e281cfdffbcf4019821d25dcb9.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +174,8 @@
       <workItem from="1658204569484" duration="14350000" />
       <workItem from="1658376843436" duration="5185000" />
       <workItem from="1658384951647" duration="2975000" />
-      <workItem from="1658676324079" duration="2899000" />
+      <workItem from="1658676324079" duration="4016000" />
+      <workItem from="1658841707753" duration="11942000" />
     </task>
     <servers />
   </component>

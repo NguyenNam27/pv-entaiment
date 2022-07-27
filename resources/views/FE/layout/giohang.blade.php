@@ -25,7 +25,7 @@
                 @endphp
                 @if(session('cart'))
                     @foreach(session('cart') as $id=>$details)
-{{--                        {{dd($details)}}--}}
+                        {{--                        {{dd($details)}}--}}
                         @php  $total += $details['price'] * $details['quantity'] @endphp
                         <tr data-id={{$id}}>
                             <td>
@@ -39,7 +39,9 @@
 
                             </td>
                             <td id="total-{{$id}}"
-                                class="total_price" total_price="{{$details['price'] * $details['quantity']}}">{{number_format($details['price'] * $details['quantity'])}}đ
+                                class="total_price"
+                                total_price="{{$details['price'] * $details['quantity']}}">{{number_format($details['price'] * $details['quantity'])}}
+                                đ
                             </td>
                             <td class="close-product"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
@@ -88,11 +90,12 @@
                         </div>
                         <div class="col-md-8">
                             <select name="provinceid" class="province">
-                                <option>--Chọn Tỉnh Thành Phố--</option>
+                                <option value="" selected disabled>--Chọn Tỉnh Thành Phố--</option>
                                 @foreach($LocationProvince as $data)
                                     <option value="{{$data->provinceid}}">{{$data->name}}
                                 @endforeach
                             </select>
+
                         </div>
                         <div class="col-md-4">
                             <label for="">Quận/Huyện <span>*</span></label>
@@ -100,7 +103,7 @@
                         </div>
                         <div class="col-md-8">
                             <select id="districtid" name="districtid">
-                                <option>--Chọn Quận Huyện--</option>
+                                <option value="" selected disabled>--Chọn Quận Huyện--</option>
                             </select>
                         </div>
                         <div class="col-md-4">
@@ -108,7 +111,7 @@
                         </div>
                         <div class="col-md-8">
                             <select name="wardid" id="wardid">
-                                <option>--Chọn Phường Xã--</option>
+                                <option value="" selected disabled>--Chọn Phường Xã--</option>
 
                             </select>
                         </div>
@@ -117,7 +120,8 @@
                             <label for="">Địa chỉ nhận hàng <span>*</span></label>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="address" id="" placeholder="Nhập địa chỉ">
+                            <input readonly="readonly" type="text" name="address" id="txtaddress"
+                                   placeholder="Nhập địa chỉ">
                         </div>
 
                         <div class="col-md-4">
@@ -139,11 +143,11 @@
                         </div>
                     </div>
 
-                <div class="desc d-dfex">
-                    <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
-                    <a href="#">Chính sách & Quy định của chúng tôi.</a>
-                </div>
-                <button type="submit">Đặt hàng</button>
+                    <div class="desc d-dfex">
+                        <p>Khi bấm nút đặt hàng có nghĩa là bạn đã chấp nhận các</p>
+                        <a href="#">Chính sách & Quy định của chúng tôi.</a>
+                    </div>
+                    <button type="submit">Đặt hàng</button>
                 </form>
             </div>
         </div>
@@ -156,6 +160,7 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
+
             $.ajaxSetup({
                 header: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -266,7 +271,7 @@
 
             })
             // load phường xã
-            $('#districtid').on('change',function (e) {
+            $('#districtid').on('change', function (e) {
                 e.preventDefault();
                 let data = {
                     districtid: $(this).val(),
@@ -274,14 +279,14 @@
                 }
                 // console.log(data);
                 $.ajax({
-                    type:'POST',
-                    url:'ward',
-                    dataType:'json',
-                    data:data,
-                    success:function (json) {
+                    type: 'POST',
+                    url: 'ward',
+                    dataType: 'json',
+                    data: data,
+                    success: function (json) {
                         $('#wardid').empty();
-                        json.forEach((element, index,array) =>
-                            $('#wardid').append("<option value='"+element['wardid']+"'>"+element['name'])
+                        json.forEach((element, index, array) =>
+                            $('#wardid').append("<option value='" + element['wardid'] + "'>" + element['name'])
                         );
 
                     }
@@ -289,5 +294,6 @@
 
             })
         });
+
     </script>
 @endsection

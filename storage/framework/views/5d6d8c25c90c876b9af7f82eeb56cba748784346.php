@@ -35,6 +35,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $('.icon-menu').click(function () {
@@ -53,6 +55,15 @@
         $('.buy').click(function () {
             $('.buy_info').show();
         })
+        $('.province').change(function () {
+            var province = $('.province option:selected').text();
+            $('#txtaddress').val(province);
+        })
+        $('#districtid').change(function () {
+            var district = $('#districtid option:selected').text();
+            $('#txtaddress').val(district).val(province);
+        })
+
     })
 </script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
