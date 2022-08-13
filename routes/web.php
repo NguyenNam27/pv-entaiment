@@ -54,8 +54,10 @@ Route::get('/','FrontEndController@Trangchu')->name('trangchu');
 Route::get('KOL','FrontEndController@KOL')->name('KOL');
 Route::get('news','FrontEndController@tintuc')->name('tintuc');
 Route::get('chi-tiet-tin-tuc/{slug}','FrontEndController@chitiettintuc')->name('chitiettintuc');
-Route::get('contact','FrontEndController@lienhe')->name('lienhe');
-Route::post('lien-he','FrontEndController@post_lienhe')->name('post');
+Route::get('booking','FrontEndController@booking')->name('booking');
+//Route::get('','FrontEndController@lienhe')->name('lienhe');
+
+Route::post('lien-he','FrontEndController@post_booking')->name('post');
 Route::get('product','FrontEndController@store')->name('product');
 Route::get('chi-tiet-san-pham/{slug}','FrontEndController@chitietsanpham')->name('chitietsanpham');
 

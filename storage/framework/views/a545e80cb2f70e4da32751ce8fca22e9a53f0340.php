@@ -55,7 +55,7 @@
             </div>
             <div class="buy_info">
                 <h3 class="title"><i class="fa-solid fa-pen-to-square"></i> THÔNG TIN ĐẶT HÀNG</h3>
-                <form action="<?php echo e(route('post_checkout')); ?>" method="post" enctype="multipart/form-data">
+                <form id="frm-lang" action="<?php echo e(route('post_checkout')); ?>" method="post" enctype="multipart/form-data">
                     <?php echo csrf_field(); ?>
                     <div class="row">
                         <div class="col-md-4">
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-md-8">
                             <select name="provinceid" class="province">
-                                <option>--Chọn Tỉnh Thành Phố--</option>
+                                <option value="" selected disabled>--Chọn Tỉnh Thành Phố--</option>
                                 <?php $__currentLoopData = $LocationProvince; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <option value="<?php echo e($data->provinceid); ?>"><?php echo e($data->name); ?>
 
@@ -92,12 +92,12 @@
                             </select>
                         </div>
                         <div class="col-md-4">
-                            <label for="">Quận/Huyện <span>*</span></label>
+                            <label  >Quận/Huyện <span>*</span></label>
 
                         </div>
                         <div class="col-md-8">
                             <select id="districtid" name="districtid">
-                                <option>--Chọn Quận Huyện--</option>
+                                <option value="" selected disabled>--Chọn Quận Huyện--</option>
                             </select>
                         </div>
                         <div class="col-md-4">
@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-md-8">
                             <select name="wardid" id="wardid">
-                                <option>--Chọn Phường Xã--</option>
+                                <option value="" selected disabled>--Chọn Phường Xã--</option>
 
                             </select>
                         </div>
@@ -114,7 +114,7 @@
                             <label for="">Địa chỉ nhận hàng <span>*</span></label>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="address" id="" placeholder="Nhập địa chỉ">
+                            <input id="address" type="text" name="address"  placeholder="Nhập địa chỉ">
                         </div>
 
                         <div class="col-md-4">
@@ -132,7 +132,7 @@
                             <label for="">Lời nhắn thêm <span>*</span></label>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="note" id="" placeholder="Nội dung lời nhắn">
+                            <input  type="text" name="note" id="" placeholder="Nội dung lời nhắn">
                         </div>
                     </div>
                     <div class="desc d-dfex">
@@ -305,6 +305,9 @@
 
             })
         });
+    </script>
+    <script>
+        var form = document.getElementById('#frm-lang')
     </script>
 <?php $__env->stopSection(); ?>
 

@@ -12,7 +12,7 @@
                 <li class="menu1">
                     <a href="<?php echo e(route('KOL')); ?>">ARTIST</a>
                     <ul class="menu2">
-                        <li><a href="<?php echo e(route('lienhe')); ?>">booking</a></li>
+                        <li><a href="<?php echo e(route('booking')); ?>">booking</a></li>
                     </ul>
                 </li>
                 <li><a href="<?php echo e(route('tintuc')); ?>">news</a></li>
@@ -66,7 +66,7 @@
             <li style="animation-delay: 0s">
                 <a href="<?php echo e(route('KOL')); ?>">ARTIST</a>
                 <ul>
-                    <li ><a href="<?php echo e(route('lienhe')); ?>">BOOKING</a></li>
+                    <li ><a href="<?php echo e(route('booking')); ?>">BOOKING</a></li>
                 </ul>
             </li>
             <li ><a href="<?php echo e(route('tintuc')); ?>">NEWS</a></li>

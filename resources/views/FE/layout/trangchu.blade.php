@@ -97,7 +97,7 @@
                                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVinhOfficialFanpage%2F&tabs=timeline&width=320&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                             </div>
                             <div class="socical-widget">
-                                <h5>Follow us on</h5>
+                                <h5>FOLLOW US ON</h5>
                                 <a href="https://www.facebook.com/VinhOfficialFanpage" target="_blank"><i class="fab fa-facebook-square"></i></a>
                                 <a href="https://www.youtube.com/phamvinhofficial99" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="https://www.tiktok.com/@phamvinh99" target="_blank"><i class="fab fa-tiktok"></i></a>

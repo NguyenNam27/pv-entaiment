@@ -12,7 +12,7 @@
                 <li class="menu1">
                     <a href="{{route('KOL')}}">ARTIST</a>
                     <ul class="menu2">
-                        <li><a href="{{route('lienhe')}}">booking</a></li>
+                        <li><a href="{{route('booking')}}">booking</a></li>
                     </ul>
                 </li>
                 <li><a href="{{route('tintuc')}}">news</a></li>
@@ -64,7 +64,7 @@
             <li style="animation-delay: 0s">
                 <a href="{{route('KOL')}}">ARTIST</a>
                 <ul>
-                    <li ><a href="{{route('lienhe')}}">BOOKING</a></li>
+                    <li ><a href="{{route('booking')}}">BOOKING</a></li>
                 </ul>
             </li>
             <li ><a href="{{route('tintuc')}}">NEWS</a></li>

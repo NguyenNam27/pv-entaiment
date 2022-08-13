@@ -53,12 +53,22 @@
         $('.buy').click(function () {
             $('.buy_info').show();
         })
+        $('.province').change(function (){
+            var province = $('.province option:selected').text();
+            $('#address').val(province)
+        })
+        $('#districtid').change(function (){
+            var districtid = $('#districtid option:selected').text();
+            $('#address').val(districtid)
+        })
+        $('#wardid').change(function (){
+            var wardid = $('#wardid option:selected').text();
+            Array.prototype.push.apply(province, districtid,wardid);
+        })
     })
 </script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
 @yield('js_cart')
 </html>

@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0243b60c-9409-4a0c-85bb-1de3bff56cb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +181,9 @@
       <workItem from="1658071277301" duration="19532000" />
       <workItem from="1658204569484" duration="19755000" />
       <workItem from="1658726265919" duration="434000" />
-      <workItem from="1658726711952" duration="4156000" />
+      <workItem from="1658726711952" duration="8722000" />
+      <workItem from="1659081481195" duration="5516000" />
+      <workItem from="1659633956350" duration="11206000" />
     </task>
     <servers />
   </component>

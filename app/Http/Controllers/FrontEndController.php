@@ -40,12 +40,11 @@ class FrontEndController extends Controller
     public function KOL(){
         return view('FE.layout.artist');
     }
-    public function lienhe(){
+    public function booking(){
 
         return view('FE.layout.book');
     }
-    public function  post_lienhe(Request $request){
-//        dd($request->all());
+    public function  post_booking(Request $request){
         $request->validate([
             'name_company'=>'required|max:255',
             'budget'=>'required',
@@ -70,7 +69,7 @@ class FrontEndController extends Controller
 
         session()->flash('success','Cảm ơn bạn đã gửi thông tin cho chúng tôi ');
 
-        return redirect()->route('lienhe');
+        return redirect()->route('booking');
     }
 
     public function tintuc(){
@@ -174,6 +173,6 @@ class FrontEndController extends Controller
     public function video(){
         return view('FE.layout.video');
     }
-    
+
 
 }
