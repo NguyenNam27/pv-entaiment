@@ -35,7 +35,8 @@
                         <label for="">Số lượng:</label>
                         <div class ="input-group text-center">
                             <button class = "input-group-text decrement-btn">-</button>
-                            <input type="text" class="qty-input" value="1" disabled>
+                            <input type="number" name="qty" class="qty-input_product_{{$detail_product->id}}" value="1" >
+                            <input name="productid_hidden" type="hidden"  value="{{$detail_product->id}}" />
                             <button class = "input-group-text increment-btn">+</button>
                         </div>
 
@@ -45,7 +46,7 @@
                     </div>
                     <div class="message">
 
-                        <p>Đã thêm vào Giỏ hàng.</p>
+{{--                        <p>Đã thêm vào Giỏ hàng.</p>--}}
                         <a href="{{route('add_cart',['id'=>$detail_product->id])}}">Xem Giỏ Hàng</a>
                     </div>
                 </div>

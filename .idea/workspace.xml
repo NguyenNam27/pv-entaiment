@@ -3,16 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="0243b60c-9409-4a0c-85bb-1de3bff56cb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/giohang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/trangchu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a545e80cb2f70e4da32751ce8fca22e9a53f0340.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/0pomtVLSkVRqJ0PUHPA0DFJzLH50r26kkK2ZBpaA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Jm4ljNOgPptL34zGLT6cL7zyhLHlcoVDC7sDgKzV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MO0jFwJedExp1haLMI1TnSnsmXsHwUTVWUnFnZIC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MwvG5enCEZv0CEN2Pr631WyZvvGFt7dHbTAZHTgC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/gq2p6eeowu2X2wkcLnquGyoggU79xZ8jwZCtZYSv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/iqoIwzq7sw0SkMQk5jGZ961qMyPkUuoxKKuUciVz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/nnA9mX6N1QkAbVOewPV6h0O1qDd5HYUTSP1AfRKP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gloudemans/shoppingcart/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/deprecation-contracts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Gitignore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-client-contracts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/service-contracts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +192,22 @@
       <workItem from="1658726711952" duration="8722000" />
       <workItem from="1659081481195" duration="5516000" />
       <workItem from="1659633956350" duration="11206000" />
+      <workItem from="1660705202084" duration="635000" />
+      <workItem from="1661097649573" duration="604000" />
+      <workItem from="1661391554919" duration="3152000" />
+      <workItem from="1662553481328" duration="3286000" />
+      <workItem from="1662659107072" duration="2120000" />
+      <workItem from="1662730826407" duration="1250000" />
+      <workItem from="1662735000018" duration="254000" />
+      <workItem from="1662741048190" duration="708000" />
+      <workItem from="1663037829921" duration="1328000" />
+      <workItem from="1663145768586" duration="111000" />
+      <workItem from="1663159360186" duration="3564000" />
+      <workItem from="1663227915530" duration="3109000" />
+      <workItem from="1663306936957" duration="2759000" />
+      <workItem from="1663591722216" duration="4433000" />
+      <workItem from="1664176557280" duration="1189000" />
+      <workItem from="1664594344199" duration="2231000" />
     </task>
     <servers />
   </component>

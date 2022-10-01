@@ -307,7 +307,7 @@
         });
     </script>
     <script>
-        var form = document.getElementById('#frm-lang')
+        // var form = document.getElementById('#frm-lang')
     </script>
 <?php $__env->stopSection(); ?>
 

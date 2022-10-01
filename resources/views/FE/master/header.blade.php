@@ -78,9 +78,7 @@
             <li style="animation-delay: 0.4s"><a href="{{route('product')}}">STORE</a></li>
             <li ><a href="">CONTACT </a></li>
 
-
         @guest
-
                 <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
                 <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
             @else

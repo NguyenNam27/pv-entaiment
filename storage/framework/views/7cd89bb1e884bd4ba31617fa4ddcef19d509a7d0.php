@@ -80,9 +80,7 @@
             <li style="animation-delay: 0.4s"><a href="<?php echo e(route('product')); ?>">STORE</a></li>
             <li ><a href="">CONTACT </a></li>
 
-
         <?php if(auth()->guard()->guest()): ?>
-
                 <li><a href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a></li>
                 <li><a href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a></li>
             <?php else: ?>
