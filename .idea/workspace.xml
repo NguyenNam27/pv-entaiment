@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0243b60c-9409-4a0c-85bb-1de3bff56cb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/BE/order/danhsachdonhang.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/BE/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BE/layout/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/chitietsanpham.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/0pomtVLSkVRqJ0PUHPA0DFJzLH50r26kkK2ZBpaA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Jm4ljNOgPptL34zGLT6cL7zyhLHlcoVDC7sDgKzV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MO0jFwJedExp1haLMI1TnSnsmXsHwUTVWUnFnZIC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MwvG5enCEZv0CEN2Pr631WyZvvGFt7dHbTAZHTgC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/gq2p6eeowu2X2wkcLnquGyoggU79xZ8jwZCtZYSv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/iqoIwzq7sw0SkMQk5jGZ961qMyPkUuoxKKuUciVz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/nnA9mX6N1QkAbVOewPV6h0O1qDd5HYUTSP1AfRKP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/614aea13987ac4446ace9fdc864dd8a651d96e32.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7cd89bb1e884bd4ba31617fa4ddcef19d509a7d0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gloudemans/shoppingcart/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/deprecation-contracts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Gitignore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-client-contracts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/service-contracts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/layout/store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/layout/store.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_chititetsanpham.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_chititetsanpham.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FE/master/layout_giohang.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/74zfB0vJuqAKhxB44vf28Z1r2Z9kSOaJXoDnfKx8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/990759fc06ec4bb2f102fb0d585c93a5d66aad41.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/990759fc06ec4bb2f102fb0d585c93a5d66aad41.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9fe3f4bb4be7c40d7b8c739c27e38534a9a121b8.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9fe3f4bb4be7c40d7b8c739c27e38534a9a121b8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a6ef2e0cd69c2de75f901d984e117c7251cea624.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a6ef2e0cd69c2de75f901d984e117c7251cea624.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a7eb5b25187f20db9f65314def3a6fb9f7cdaf71.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f699120716d56a45082db20952873544b3779c42.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f699120716d56a45082db20952873544b3779c42.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +204,8 @@
       <workItem from="1663306936957" duration="2759000" />
       <workItem from="1663591722216" duration="4433000" />
       <workItem from="1664176557280" duration="1189000" />
-      <workItem from="1664594344199" duration="2231000" />
+      <workItem from="1664594344199" duration="2852000" />
+      <workItem from="1664894009977" duration="24529000" />
     </task>
     <servers />
   </component>

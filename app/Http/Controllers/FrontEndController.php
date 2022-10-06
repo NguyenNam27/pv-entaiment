@@ -12,7 +12,7 @@ use App\Setting;
 use App\Video;
 use App\Contact;
 use App\Photo;
-
+use App\Subcategory;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -84,23 +84,10 @@ class FrontEndController extends Controller
     public function chitiettintuc($slug){
 
         $detail = Post::where([['slug',$slug],['is_active','1']])->first();
-
         return view('FE.layout.chitietnew',[
             'detail'=>$detail
         ]);
     }
-    public function chitietsanpham($slug){
-        $detail_product = Product::where([['slug',$slug],['is_active','1']])->first();
-        $relate = Product::where('subcategories_id', $detail_product->subcategories_id)
-            ->whereNotIn('slug', [$slug])
-            ->get();
-        return view('FE.layout.chitietsanpham',[
-            'detail_product'=>$detail_product,
-            'relate'=>$relate
-        ]);
-
-    }
-
     public function store(){
         $product = Product::where('is_active','1')
                             ->orderBy('id','desc')
@@ -111,7 +98,18 @@ class FrontEndController extends Controller
             'product'=>$product,
         ]);
     }
+    public function chitietsanpham($slug){
+        $detail_product = Product::where([['slug',$slug],['is_active','1']])->first();
 
+        $relate = Product::where('subcategories_id', $detail_product->subcategories_id)
+            ->whereNotIn('slug', [$slug])
+            ->get();
+        return view('FE.layout.chitietsanpham',[
+            'detail_product'=>$detail_product,
+            'relate'=>$relate
+        ]);
+
+    }
     public function login(){
 
         return view('auth.login');

@@ -8,7 +8,7 @@
                 <div class="col-md-3 info">
                     <div class="item">
                         <div class="item__img">
-                            <a href="{{route('chitietsanpham',['slug'=>$pro->slug])}}}">
+                            <a href="{{route('chitietsanpham',['slug'=>$pro->slug])}}">
                                 <img src="{{asset($pro->image)}}" alt="">
                             </a>
                         </div>

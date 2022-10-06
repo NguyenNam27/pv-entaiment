@@ -56,7 +56,7 @@
           </li>
           <li class="active">
               <a href="<?php echo e(route('admin.photo.index')); ?>">
-                  <i class="fa fa-user"></i> <span >QUẢN LÝ GALLERY</span>
+                  <i class=""></i> <span >QUẢN LÝ GALLERY</span>
               </a>
           </li>
 

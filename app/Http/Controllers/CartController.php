@@ -11,6 +11,8 @@ use App\Customer;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
+session_start();
 class CartController extends Controller
 {
     public function giohang_index(){
@@ -40,6 +42,8 @@ class CartController extends Controller
         session()->put('cart',$cart);
 
         return redirect()->route('cart.index')->with('success', 'Product added to cart successfully!');;
+
+
     }
     public function UpdateCart(Request $request){
 

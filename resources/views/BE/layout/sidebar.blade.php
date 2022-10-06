@@ -56,7 +56,12 @@
           </li>
           <li class="active">
               <a href="{{route('admin.photo.index')}}">
-                  <i class="fa fa-user"></i> <span >QUẢN LÝ GALLERY</span>
+                  <i class=""></i> <span >QUẢN LÝ GALLERY</span>
+              </a>
+          </li>
+          <li class="active">
+              <a href="">
+                  <i class=""></i> <span >QUẢN LÝ ĐƠN HÀNG</span>
               </a>
           </li>
 

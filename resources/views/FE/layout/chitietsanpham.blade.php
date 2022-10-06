@@ -4,51 +4,36 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-12 col-lg-5">
-{{--                    <div class="item_img">--}}
-{{--                        <img src="{{asset($detail_product->image)}}" alt="hinh anh san pham">--}}
-{{--                    </div>--}}
-
-                    <ul id="imageGallery" style="list-style: none">
-                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
-                            <img width="100%" src="{{asset($detail_product->image)}}" />
-                        </li>
-                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
-                            <img width="10%" src="{{asset($detail_product->image)}}" />
-                        </li>
-                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
-                            <img width="10%" src="{{asset($detail_product->image)}}" />
-                        </li>
-                        <li data-thumb="{{asset($detail_product->image)}}" data-src="{{asset($detail_product->image)}}">
-                            <img width="10%" src="{{asset($detail_product->image)}}" />
-                        </li>
-
-                    </ul>
+                    <div class="item_img">
+                        <img src="{{asset($detail_product->image)}}" alt="hinh anh san pham">
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-7">
+                    <form action="" method="POST">
                     <div class="item_info">
                         <h4>{{$detail_product->name}}</h4>
                         <p>{{strip_tags($detail_product->short_description)}}</p>
                         <p>{!! $detail_product->content !!}</p>
-
                         <p>*Giá sau ngày {{$detail_product->created_at}}: {{number_format($detail_product->price)}} VNĐ</p>
                         <p class="price">{{number_format($detail_product->price)}} VND</p>
                         <label for="">Số lượng:</label>
                         <div class ="input-group text-center">
                             <button class = "input-group-text decrement-btn">-</button>
-                            <input type="number" name="qty" class="qty-input_product_{{$detail_product->id}}" value="1" >
+                            <input type="text" name="qty" class="qty-input" value="1" >
                             <input name="productid_hidden" type="hidden"  value="{{$detail_product->id}}" />
                             <button class = "input-group-text increment-btn">+</button>
                         </div>
 
-{{--                        <p class="btn-holder"><a href="" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>--}}
+{{--                    <p class="btn-holder"><a href="" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>--}}
 
                         <button  class="add-to-cart-btn"><a href="{{route('add_cart',['id'=>$detail_product->id])}}" style="color: white"> Add to cart</a> </button>
                     </div>
                     <div class="message">
-
-{{--                        <p>Đã thêm vào Giỏ hàng.</p>--}}
+                        <p>Đã thêm vào Giỏ hàng.</p>
                         <a href="{{route('add_cart',['id'=>$detail_product->id])}}">Xem Giỏ Hàng</a>
                     </div>
+                    </form>
+
                 </div>
             </div>
             <h4>Related Product</h4>
@@ -75,7 +60,8 @@
 @endsection
 @section('myjs')
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-    <script>
+
+    <script type="text/javascript">
         $(document).ready(function (){
            $('.decrement-btn').click(function (e) {
                e.preventDefault();
@@ -124,6 +110,8 @@
                     },
                 });
             });
+
+
         });
 
     </script>
